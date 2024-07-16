@@ -1,0 +1,125 @@
+Classes
+1.Forma (classe base abstrata)
+2.Ponto (classe auxiliar para coordenadas)
+3.SegmentoReta (subclasse de Forma)
+4.Triangulo (subclasse de Forma)
+5.Circulo (subclasse de Forma)
+6.Retangulo (subclasse de Forma)
+7.Quadrado (subclasse de Retangulo)
+8.Plano (classe de controle que gerencia as formas)
+
+Diagrama de Classes
+Forma abstrata
+
+Atributos:
+tipo: string
+Métodos:
+descricao(): string (abstrato)
+Ponto
+
+Atributos:
+x: int
+y: int
+Métodos:
+descricao(): string
+SegmentoReta (Forma)
+
+Atributos:
+ponto_inicial: Ponto
+ponto_final: Ponto
+Métodos:
+descricao(): string
+Triangulo (Forma)
+
+Atributos:
+p1: Ponto
+p2: Ponto
+p3: Ponto
+Métodos:
+descricao(): string
+lados(): tuple
+tipo_triangulo(): string
+is_retangulo(): bool
+area(): float
+Circulo (Forma)
+
+Atributos:
+centro: Ponto
+raio: int
+Métodos:
+descricao(): string
+Retangulo (Forma)
+
+Atributos:
+x1: int
+y1: int
+x2: int
+y2: int
+Métodos:
+descricao(): string
+Quadrado (Retangulo)
+
+Métodos:
+descricao(): string
+Plano
+
+Atributos:
+formas: list
+Métodos:
+adicionar_forma(forma: Forma): void
+remover_forma_aleatoria(): string
+listar_formas(): string
+
+Herança: As subclasses herdam da classe base Forma.
+Polimorfismo: Uso de métodos polimórficos na classe Plano para manipular objetos do tipo Forma.
+Composição Forte: A relação entre Triangulo e Ponto, onde a existência de um Triangulo depende dos seus pontos.
+Associação Fraca: A relação entre Plano e Forma, onde Plano possui referências a instâncias de Forma sem serem proprietários exclusivos.
+
+            +------------------+
+            |     <<abstract>> |
+            |       Forma      |
+            +------------------+
+            | - tipo: string   |
+            +------------------+
+            | + descricao()    |
+            |                  |
+            +------------------+
+                   ^
+                   |
+   +---------------+----------------+--------------------+----------------+
+   |               |                |                    |                |
+   |               |                |                    |                |
++-----------------+ +-------------------+    +------------------+ +------------------+
+|  SegmentoReta   | |   Triangulo       |    |     Circulo      | |   Retangulo      |
++-----------------+ +-------------------+    +------------------+ +------------------+
+| - ponto_inicial:| | - p1: Ponto       |    | - centro: Ponto  | | - x1: int        |
+|   Ponto         | | - p2: Ponto       |    | - raio: int      | | - y1: int        |
+| - ponto_final:  | | - p3: Ponto       |    +------------------+ | - x2: int        |
+|   Ponto         | +-------------------+    | + descricao()    | | - y2: int        |
++-----------------+ | + descricao()     |    +------------------+ +------------------+
+| + descricao()   | | + lados()         |                                 |
++-----------------+ | + tipo_triangulo()|                                 |
+                    | + is_retangulo()  |                                 |
+                    | + area()          |                                 |
+                    +-------------------+                                 |
+                                                                          |
+                                                                          |
+                                                              +-----------+----------+
+                                                              |       Quadrado       |
+                                                              +----------------------+
+                                                              | + descricao()        |
+                                                              +----------------------+
+
+          +-----------------------------------------+
+          |                  Plano                  |
+          +-----------------------------------------+
+          |             - formas: list              |
+          +-----------------------------------------+
+          | + adicionar_forma(forma: Forma): void   |
+          | + remover_forma_aleatoria(): string     |
+          | + listar_formas(): string               |
+          +-----------------------------------------+
+
+
+
+

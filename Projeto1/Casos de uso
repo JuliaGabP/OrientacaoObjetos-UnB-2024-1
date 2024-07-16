@@ -1,0 +1,80 @@
+Caso de Uso 1: Gerar uma Figura
+Ator Principal: Usuário
+
+Objetivo: Gerar uma nova figura geométrica no plano cartesiano.
+
+Pré-condições:
+
+O programa está em execução.
+O plano pode conter várias figuras.
+Pós-condições:
+
+Uma nova figura geométrica é adicionada ao plano.
+A descrição da figura criada é exibida ao usuário.
+Fluxo Principal:
+
+O usuário seleciona a opção de gerar uma nova figura (Opção 1 do menu).
+O sistema gera aleatoriamente uma das figuras (Segmento de Reta, Triângulo, Círculo, Retângulo ou Quadrado).
+O sistema calcula as propriedades da figura (por exemplo, perímetro, área, tipo de triângulo, etc.).
+O sistema adiciona a nova figura ao plano.
+O sistema exibe a descrição detalhada da figura criada.
+O sistema retorna ao menu principal.
+
+Caso de Uso 2: Excluir uma Figura Aleatória
+Ator Principal: Usuário
+
+Objetivo: Excluir uma figura aleatória do plano cartesiano.
+
+Pré-condições:
+
+O programa está em execução.
+O plano contém pelo menos uma figura.
+Pós-condições:
+
+Uma figura é removida do plano.
+A descrição da figura removida é exibida ao usuário.
+O estado atualizado do plano é exibido ao usuário.
+
+Fluxo Principal:
+
+O usuário seleciona a opção de excluir uma figura aleatória (Opção 2 do menu).
+O sistema verifica se há figuras no plano.
+2a. Se não houver figuras, o sistema informa que o plano está vazio e retorna ao menu principal.
+O sistema seleciona e remove aleatoriamente uma figura do plano.
+O sistema exibe a descrição detalhada da figura removida.
+O sistema exibe a lista de figuras restantes no plano.
+O sistema retorna ao menu principal.
+
+Caso de Uso 3: Encerrar o Programa
+Ator Principal: Usuário
+
+Objetivo: Encerrar a execução do programa.
+
+Pré-condições:
+
+O programa está em execução.
+Pós-condições:
+
+O programa é encerrado.
+Fluxo Principal:
+
+O usuário seleciona a opção de encerrar o programa (Opção 3 do menu).
+O sistema exibe uma mensagem de encerramento.
+O sistema encerra a execução.
+
+Caso de Uso 4: Comando Inválido
+Ator Principal: Usuário
+
+Objetivo: Informar ao usuário que a entrada foi inválida.
+
+Pré-condições:
+
+O programa está em execução.
+Pós-condições:
+
+O usuário é informado sobre a entrada inválida.
+Fluxo Principal:
+
+O usuário insere um comando que não é 1, 2 ou 3.
+O sistema exibe uma mensagem de comando inválido.
+O sistema retorna ao menu principal.
