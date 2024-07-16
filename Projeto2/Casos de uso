@@ -1,0 +1,54 @@
+-Caso de Uso 1: Criar Forma Geométrica Aleatória
+Nome: Criar Forma Geométrica Aleatória
+Ator: Usuário
+Descrição: O usuário solicita a criação de uma forma geométrica aleatória (Círculo, Quadrado, Retângulo, Triângulo ou Segmento de Reta).
+Pré-condições: O sistema está em execução e aguardando comandos.
+Fluxo de Eventos Principal:
+.O usuário seleciona a opção "Criar forma geométrica aleatória" no menu.
+.O sistema gera aleatoriamente uma das formas geométricas possíveis.
+.O sistema calcula e exibe as características da forma criada (pontos, área, perímetro, etc.).
+.A forma é adicionada ao plano cartesiano.
+Fluxo de Eventos Alternativo:
+.Nenhum.
+Pós-condições: Uma nova forma geométrica é criada e exibida no plano cartesiano.
+
+-Caso de Uso 2: Excluir Forma Geométrica
+Nome: Excluir Forma Geométrica
+Ator: Usuário
+Descrição: O usuário solicita a exclusão de uma forma geométrica aleatória do plano cartesiano.
+Pré-condições: O sistema está em execução e há pelo menos uma forma geométrica no plano cartesiano.
+Fluxo de Eventos Principal:
+.O usuário seleciona a opção "Excluir forma geométrica" no menu.
+.O sistema seleciona aleatoriamente uma forma geométrica existente no plano.
+.O sistema exibe as características da forma selecionada e a remove do plano.
+.O sistema exibe a lista atualizada de formas restantes no plano.
+Fluxo de Eventos Alternativo:
+.Se não houver formas no plano, o sistema informa ao usuário que não há formas disponíveis para exclusão.
+Pós-condições: Uma forma geométrica é removida do plano cartesiano (se houver alguma disponível).
+
+-Caso de Uso 3: Verificar Interferências entre Formas
+Nome: Verificar Interferências entre Formas
+Ator: Usuário
+Descrição: O usuário solicita a verificação de interferências (distâncias) entre duas formas geométricas aleatórias no plano cartesiano.
+Pré-condições: O sistema está em execução e há pelo menos duas formas geométricas no plano cartesiano.
+Fluxo de Eventos Principal:
+.O usuário seleciona a opção "Verificar interferências entre formas" no menu.
+.O sistema seleciona aleatoriamente duas formas geométricas existentes no plano.
+.O sistema calcula a distância entre as duas formas selecionadas.
+.O sistema exibe as características das formas selecionadas e a distância entre elas.
+Fluxo de Eventos Alternativo:
+.Se houver apenas uma forma no plano, o sistema exibe as características dessa forma e informa que não é possível calcular a distância.
+.Se não houver nenhuma forma no plano, o sistema informa ao usuário que não há formas disponíveis para verificar interferências.
+Pós-condições: A distância entre duas formas geométricas é calculada e exibida (se houver pelo menos duas formas no plano).
+
+-Caso de Uso 4: Encerrar Programa
+Nome: Encerrar Programa
+Ator: Usuário
+Descrição: O usuário solicita o encerramento do programa.
+Pré-condições: O sistema está em execução.
+Fluxo de Eventos Principal:
+.O usuário seleciona a opção "Encerrar programa" no menu.
+.O sistema exibe uma mensagem de encerramento e finaliza a execução.
+Fluxo de Eventos Alternativo:
+.Nenhum.
+Pós-condições: O sistema é encerrado.

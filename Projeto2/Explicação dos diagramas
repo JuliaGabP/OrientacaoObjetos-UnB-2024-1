@@ -1,0 +1,26 @@
+DIAGRAMA DE CLASSES
+
+Herança: Todas as formas geométricas (Circulo, Quadrado, Retangulo, Triangulo, SegmentoReta) herdam de Forma.
+Polimorfismo: Métodos como getArea(), getPerimetro(), e getDescricao() são definidos em Forma e sobrescritos nas subclasses.
+Composição forte: CartesianBoard contém uma coleção de Forma, mostrando uma relação de composição.
+Associação fraca: Cada Forma pode usar instâncias de Ponto para definir coordenadas.
+Encapsulamento: As classes possuem atributos e métodos que representam e manipulam os dados das formas geométricas.
+
+
+DIAGRAMA DE CASOS DE USOS
+
+Criar Forma Geométrica
+Ator Principal: Usuário
+Descrição: O usuário solicita a criação de uma nova forma geométrica aleatória no plano cartesiano. A forma criada pode ser um quadrado, retângulo, círculo, triângulo ou segmento de reta. O sistema informa as características da forma criada, incluindo seus pontos, área e perímetro.
+Excluir Forma Geométrica
+
+Ator Principal: Usuário
+Descrição: O usuário solicita a exclusão de uma forma geométrica aleatória do plano. O sistema informa qual forma foi excluída e suas características, além de listar as formas restantes no plano.
+Verificar Interferências
+
+Ator Principal: Usuário
+Descrição: O usuário solicita a verificação de interferências entre duas formas geométricas no plano. O sistema calcula a distância entre as formas selecionadas e informa se há interferência. Caso haja apenas uma forma no plano, o sistema retorna os dados dessa única forma.
+Encerrar Programa
+
+Ator Principal: Usuário
+Descrição: O usuário solicita o encerramento do programa. O sistema encerra a execução.
